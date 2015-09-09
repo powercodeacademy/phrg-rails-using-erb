@@ -6,6 +6,7 @@
 2. Use the two different types of ERB tags in our web applications. 
 3. Incorporate logic and iteration using ERB. 
 
+
 ## Overview
 
 Most major web frameworks provide some means of view templating, i.e. allowing the view, in our case an HTML document, to be constructed using a combination of HTML and Ruby code.
@@ -16,7 +17,7 @@ For this exercise, we will be using the ERB templating engine, which comes stand
 
 ## Setup
 
-For this code-along, for and clone this repository to get started. Run `bundle install` from the command line to install any needed gems. Our starter code has a basic Sinatra application - you can preview it by running `shotgun` from the command line and opening `http://localhost:9393/` in your browser. Let's check out what we have so far. 
+For this code-along, fork and clone this repository to get started. Run `bundle install` from the command line to install any needed gems. Our starter code has a basic Sinatra application - you can preview it by running `shotgun` from the command line and opening `http://localhost:9393/` in your browser. Let's check out what we have so far. 
 
 ### Starter Code
 
@@ -102,7 +103,7 @@ Notice that we use the substitution tag to display the value of the inner `squar
 <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother, why don't you ever call me?"] %>
 ```
 
-Here, wer'e defining a variable called `wall_posts` and assigning it's value to an array of strings. Now, we can iterate through our wall_posts array and create a new `li` for each one. 
+Here, we're defining a variable called `wall_posts` and assigning it's value to an array of strings. Now, we can iterate through our wall_posts array and create a new `li` for each one. 
 
 ```ruby
 <ul>
