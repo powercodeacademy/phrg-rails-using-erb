@@ -1,11 +1,10 @@
 # Sinatra Views: Using ERB
 
+## Objectives
+1. Learn what templating engines are and why we use them.
+2. Be able to use the different types of ERB tags in your views. 
 
 ## Overview
-
-## Objectives
-1. Be able to use the different types of ERB tags in your views. 
-2. Learn what templating engines are and why we use them.
 
 Most major web frameworks provide some means of view templating, i.e. allowing the view, in our case an HTML document, to be constructed using a combination of HTML and Ruby code.
 
