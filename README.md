@@ -1,5 +1,7 @@
 # Sinatra Views: Using ERB
 
+## Objectives
+1. Be able to use the different types of ERB tags in your views. 
 
 ## Overview
 
