@@ -2,6 +2,7 @@
 
 ## Objectives
 1. Be able to use the different types of ERB tags in your views. 
+2. Learn what templating engines are and why we use them.
 
 ## Overview
 
