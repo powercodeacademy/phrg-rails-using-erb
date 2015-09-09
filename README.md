@@ -116,7 +116,7 @@ This should display:
 ```html
 <ul>
   <li>First Post!</li>
-  <li>Second Post!!!</li>
+  <li>Second Post!</li>
   <li>Hello, it's your mother, why don't you ever call me?</li>
 </ul>
 ```
