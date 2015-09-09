@@ -68,6 +68,8 @@ As you can see, only the second `p` tag will was sent to the browser. This examp
   <% end %>
 ```
 
+### Iteration
+
 We can also use iteration to manage lists of items. For instance, given an array `squares = [1,2,4,8]`:
 
 ```ruby
