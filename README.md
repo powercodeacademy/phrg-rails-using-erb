@@ -27,11 +27,11 @@ Our `views` directory contains one file, `index.erb`, and our controller has jus
 
 ## Embedding Ruby
 
-ERB and other templating engines allow us to modify the content and structure of our HTML code. With ERB, we do this using two differnet types of tags - the substitution, or `<%=` tag, and the scripting tag, or `<%` tag. 
+ERB and other templating engines allow us to modify the content and structure of our HTML code. With ERB, we do this using two different types of tags - the substitution, or `<%=` tag, and the scripting tag, or `<%` tag. 
 
 ### Substitution Tags
 
-The substituion tag evaluates ruby code and then displays the results into the view. It opens with `<%=` and closes with `%>`. Inside of these tags, you can write any valid Ruby code that you want. 
+The substitution tag evaluates ruby code and then displays the results into the view. It opens with `<%=` and closes with `%>`. Inside of these tags, you can write any valid Ruby code that you want. 
 
 In our `index.erb` file, add the following code: 
 
@@ -50,7 +50,16 @@ The strings are concatenated first, then displayed on the page. Below this, add 
 ```erb
 <%= 1 + 1 %>
 ```
-What do you think will be displayed? If you guessed `2`, you're right! In general, we use the substituion tags when we want to display some evaulation on the page. 
+
+What do you think will be displayed? If you guessed `2`, you're right! In general, we use the substitution tags when we want to display some evaluation on the page.
+
+We can wrap the substitution tags in any other HTML tags that we like. The code below will output 
+
+```erb
+<h1><%= "I love " + "Ruby!!" %></h1>
+```
+will output: <h1>I love Ruby!!</h1>
+
 
 ### Scripting Tags
 
@@ -64,7 +73,7 @@ Scripting tags open with `<%` and close with `%>`. They evaluate, but do not act
   <% end %>
 ```
 
-As you can see, only the second `p` tag will was sent to the browser. This example is a little bit silly, because 1 will never be equal to 2. However, imagine if you were Facebook, and you had a method called `logged_in?` which returns true is a user is logged in, and false if they're not. You could then show differnet content based on whether or not a user was logged in. 
+As you can see, only the second `p` tag will was sent to the browser. This example is a little bit silly, because 1 will never be equal to 2. However, imagine if you were Facebook, and you had a method called `logged_in?` which returns true is a user is logged in, and false if they're not. You could then show different content based on whether or not a user was logged in. 
 
 ```ruby
   <% if logged_in? %>
