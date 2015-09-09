@@ -11,7 +11,7 @@ For this exercise, we will be using the ERB templating engine, which comes stand
 
 ## Setup
 
-For this code-along, for and clone this repository to get started. Run `bundle install` from the command line to install any needed gems. Our starter code has a basic Sinatra application - you can preview it by running `shotgun` from the command line and opening `http://localhost:9393/` in your browser. Let's check out what we have so far. 
+For this code-along, fork and clone this repository to get started. Run `bundle install` from the command line to install any needed gems. Our starter code has a basic Sinatra application - you can preview it by running `shotgun` from the command line and opening `http://localhost:9393/` in your browser. Let's check out what we have so far. 
 
 ### Starter Code
 
