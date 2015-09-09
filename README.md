@@ -97,7 +97,7 @@ Notice that we use the substitution tag to display the value of the inner `squar
 <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother, why don't you ever call me?"] %>
 ```
 
-Here, wer'e defining a variable called `wall_posts` and assigning it's value to an array of strings. Now, we can iterate through our wall_posts array and create a new `li` for each one. 
+Here, we're defining a variable called `wall_posts` and assigning it's value to an array of strings. Now, we can iterate through our wall_posts array and create a new `li` for each one. 
 
 ```ruby
 <ul>
