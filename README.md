@@ -1,5 +1,10 @@
 # Sinatra Views: Using ERB
 
+## Objectives
+
+1. Understand the concept of a templating language and how we can use it in Sinatra.
+2. Use the two different types of ERB tags in our web applications. 
+3. Incorporate logic and iteration using ERB. 
 
 ## Overview
 
