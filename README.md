@@ -58,7 +58,7 @@ We can wrap the substitution tags in any other HTML tags that we like. The code 
 ```erb
 <h1><%= "I love " + "Ruby!!" %></h1>
 ```
-will output: <h1>I love Ruby!!</h1>
+ <h1>I love Ruby!!</h1>
 
 
 ### Scripting Tags
