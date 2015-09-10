@@ -53,7 +53,7 @@ The strings are concatenated first, then displayed on the page. Below this, add 
 
 What do you think will be displayed? If you guessed `2`, you're right! In general, we use the substitution tags when we want to display some evaluation on the page.
 
-We can wrap the substitution tags in any other HTML tags that we like. The code below will output 
+We can wrap the substitution tags in any other HTML tags that we like. The code below will output: 
 
 ```erb
 <h1><%= "I love " + "Ruby!!" %></h1>
@@ -73,7 +73,7 @@ Scripting tags open with `<%` and close with `%>`. They evaluate, but do not act
   <% end %>
 ```
 
-As you can see, only the second `p` tag will was sent to the browser. This example is a little bit silly, because 1 will never be equal to 2. However, imagine if you were Facebook, and you had a method called `logged_in?` which returns true is a user is logged in, and false if they're not. You could then show different content based on whether or not a user was logged in. 
+As you can see, only the second `p` tag will was sent to the browser. This example is a little bit silly, because 1 will never be equal to 2. However, imagine if you were Facebook, and you had a method called `logged_in?` which returns true if a user is logged in, and false if they're not. You could then show different content based on whether or not a user was logged in. 
 
 ```ruby
   <% if logged_in? %>
@@ -131,9 +131,6 @@ This should display:
   <li>Hello, it's your mother, why don't you ever call me?</li>
 </ul>
 ```
-
-We'll learn more about how to connect data from our controller to our views in the next lesson. 
-
 
 ## Resources
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
