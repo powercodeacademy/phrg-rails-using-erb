@@ -134,3 +134,5 @@ This should display:
 
 ## Resources
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
+
+<a href='https://learn.co/lessons/sinatra-using-erb' data-visibility='hidden'>View this lesson on Learn.co</a>
