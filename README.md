@@ -1,9 +1,13 @@
 # Sinatra Views: Using ERB
 
+## Overview
+
+We'll the benefits of view templating and practice using Ruby to modify our `index.erb` file in our application. 
+
 ## Objectives
 
-1. Understand the concept of a templating language and how we can use it in Sinatra.
-2. Use the two different types of ERB tags in our web applications. 
+1. Define and explain the benefits of view templating
+2. Use ERB substitution and scipting tags to modify the content and structure of HTML code
 3. Incorporate logic and iteration using ERB. 
 
 
@@ -21,7 +25,7 @@ For this code-along, fork and clone this repository to get started. Run `bundle 
 
 ### Starter Code
 
-Our `views` directory contains one file, `index.erb`, and our controller has just one route defined, which render that view. We'll be editing `index.erb` to see how we can use Ruby in our HTML. 
+Our `views` directory contains one file, `index.erb`, and our controller has just one route defined, which renders that view. We'll be editing `index.erb` to see how we can use Ruby in our HTML. 
 
 
 
@@ -112,7 +116,7 @@ Notice that we use the substitution tag to display the value of the inner `squar
 <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother, why don't you ever call me?"] %>
 ```
 
-Here, we're defining a variable called `wall_posts` and assigning it's value to an array of strings. Now, we can iterate through our wall_posts array and create a new `li` for each one. 
+Here, we're defining a variable called `wall_posts` and assigning its value to an array of strings. Now we can iterate through our wall_posts array and create a new `li` for each one. 
 
 ```ruby
 <ul>
