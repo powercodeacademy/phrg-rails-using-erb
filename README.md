@@ -2,7 +2,7 @@
 
 ## Overview
 
-We'll the benefits of view templating and practice using Ruby to modify our `index.erb` file in our application. 
+We'll look at the benefits of view templating and practice using Ruby to modify our `index.erb` file in our application.    
 
 ## Objectives
 
