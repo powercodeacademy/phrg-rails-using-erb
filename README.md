@@ -2,12 +2,12 @@
 
 ## Overview
 
-We'll look at the benefits of view templating and practice using Ruby to modify our `index.erb` file in our application.    
+We'll look at the benefits of view templating and learn how to write erb tags to do more than just display data.
 
 ## Objectives
 
 1. Define and explain the benefits of view templating
-2. Use ERB substitution and scipting tags to modify the content and structure of HTML code
+2. Use ERB substitution and scripting tags to modify the content and structure of HTML code
 3. Incorporate logic and iteration using ERB. 
 
 
@@ -17,17 +17,7 @@ Most major web frameworks provide some means of view templating, i.e. allowing t
 
 This allows us to greatly reduce duplication of HTML, as well as generate HTML that can change based on the data that is available. This is how Facebook can support 2 billion users - they create one template for the profile page which gets filled in with data from their servers representing each user. 
 
-For this exercise, we will be using the ERB templating engine, which comes standard with every Ruby installation.
-
-## Setup
-
-For this code-along, fork and clone this repository to get started. Run `bundle install` from the command line to install any needed gems. Our starter code has a basic Sinatra application - you can preview it by running `shotgun` from the command line and opening `http://localhost:9393/` in your browser. Let's check out what we have so far. 
-
-### Starter Code
-
-Our `views` directory contains one file, `index.erb`, and our controller has just one route defined, which renders that view. We'll be editing `index.erb` to see how we can use Ruby in our HTML. 
-
-
+For this lesson, we will be using the ERB templating engine, which comes standard with every Ruby installation.
 
 ## Embedding Ruby
 
