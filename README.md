@@ -67,7 +67,7 @@ Scripting tags open with `<%` and close with `%>`. They evaluate, but do not act
   <% end %>
 ```
 
-As you can see, only the second `p` tag will was sent to the browser. This example is a little bit silly, because 1 will never be equal to 2. However, imagine if you were Facebook, and you had a method called `logged_in?` which returns true if a user is logged in, and false if they're not. You could then show different content based on whether or not a user was logged in. 
+As you can see, only the second `p` tag was sent to the browser. This example is a little bit silly, because 1 will never be equal to 2. However, imagine if you were Facebook, and you had a method called `logged_in?` which returns true if a user is logged in, and false if they're not. You could then show different content based on whether or not a user was logged in. 
 
 ```ruby
   <% if logged_in? %>
@@ -130,3 +130,5 @@ This should display:
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb' title='Sinatra Views: Using ERB'>Sinatra Views: Using ERB</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb'>Using ERB</a> on Learn.co and start learning to code for free.</p>
