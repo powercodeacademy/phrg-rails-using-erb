@@ -59,7 +59,7 @@ We can wrap the substitution tags in any other HTML tags that we like. The code 
 
 Scripting tags open with `<%` and close with `%>`. They evaluate, but do not actually display, ruby code. Add the following lines of code to index.erb:  
 
-```ruby
+```erb
   <% if 1 == 2 %>
     <p>1 equals 2.</p>
   <% else %>
@@ -69,7 +69,7 @@ Scripting tags open with `<%` and close with `%>`. They evaluate, but do not act
 
 As you can see, only the second `p` tag was sent to the browser. This example is a little bit silly, because 1 will never be equal to 2. However, imagine if you were Facebook, and you had a method called `logged_in?` which returns true if a user is logged in, and false if they're not. You could then show different content based on whether or not a user was logged in. 
 
-```ruby
+```erb
   <% if logged_in? %>
     <a href="/logout">Click here to Log Out</a>
   <% else %>
@@ -81,7 +81,7 @@ As you can see, only the second `p` tag was sent to the browser. This example is
 
 We can also use iteration to manage lists of items. For instance, given an array `squares = [1,2,4,8]`:
 
-```ruby
+```erb
 <ul>
 <% squares.each do |square| %>
   <li><%= square %></li>
@@ -102,13 +102,13 @@ Would produce:
 
 Notice that we use the substitution tag to display the value of the inner `square` variable. Again, imagine that Facebook wants to print out all of your wall posts on your profile page. They could store the posts in an array called `wall_posts`. Add the following line of code to your `index.erb` file: 
 
-```ruby
+```erb
 <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother, why don't you ever call me?"] %>
 ```
 
 Here, we're defining a variable called `wall_posts` and assigning its value to an array of strings. Now we can iterate through our wall_posts array and create a new `li` for each one. 
 
-```ruby
+```erb
 <ul>
 <% wall_posts.each do |post| %>
   <li><%= post %></li>
@@ -132,3 +132,5 @@ This should display:
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb' title='Sinatra Views: Using ERB'>Sinatra Views: Using ERB</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb'>Using ERB</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-using-erb'>Using ERB</a> on Learn.co and start learning to code for free.</p>
