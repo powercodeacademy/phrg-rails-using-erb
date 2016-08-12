@@ -126,10 +126,13 @@ This should display:
 </ul>
 ```
 
+## Video Review
+
+* [Video Review- Forms](https://github.com/learn-co-curriculum/sinatra-video-review-forms) 
+
 ## Resources
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb' title='Sinatra Views: Using ERB'>Sinatra Views: Using ERB</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb'>Using ERB</a> on Learn.co and start learning to code for free.</p>
 
