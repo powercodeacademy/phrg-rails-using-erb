@@ -128,12 +128,10 @@ This should display:
 
 ## Video Review
 
-* [Video Review- Forms](https://github.com/learn-co-curriculum/sinatra-video-review-forms) 
+* [Video Review- Forms](https://www.youtube.com/watch?v=0TyCN_oJU3Y) 
 
 ## Resources
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
 
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb'>Using ERB</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-using-erb'>Using ERB</a> on Learn.co and start learning to code for free.</p>
