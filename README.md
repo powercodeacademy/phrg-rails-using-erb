@@ -126,4 +126,4 @@ This should display:
 ## Resources
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-using-erb' title='Sinatra Views: Using ERB'>Sinatra Views: Using ERB</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>PHRG Sinatra Views: Using ERB</p>

@@ -4,3 +4,5 @@ tags:
   - views
 languages:
   - ruby
+
+parent_template: git@github.com:learn-co-curriculum/sinatra-using-erb.git
