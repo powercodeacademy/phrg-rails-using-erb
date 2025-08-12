@@ -1,4 +1,4 @@
-# Sinatra Views: Using ERB
+# Rails Views: Using ERB
 
 ## Overview
 
@@ -8,8 +8,7 @@ We'll look at the benefits of view templating and learn how to write ERB tags th
 
 1. Define and explain the benefits of view templating
 2. Use ERB substitution and scripting tags to modify the content and structure of HTML code
-3. Incorporate logic and iteration using ERB. 
-
+3. Incorporate logic and iteration using ERB.
 
 ## Overview
 
@@ -17,7 +16,9 @@ Most major web frameworks provide some means of view templating, i.e., allowing 
 
 This allows us to greatly reduce duplication of HTML as well as generate content that can change based on the available data. This is how Facebook can support 2 billion users –– they create one template for the profile page, which then gets filled out with distinct, individualized user data from their servers.
 
-For this lesson, we will be using the ERB templating engine, which comes standard with every Ruby installation.
+For this lesson, we will be using the ERB templating engine, which comes standard with every Ruby installation and is the default templating engine for Rails.
+
+**Rails View Structure:** In Rails, view files are organized in the `app/views` directory and follow the naming convention `action_name.format.engine` (e.g., `index.html.erb`). Views are automatically rendered by controllers and are organized into subdirectories that correspond to controller names.
 
 ## Embedding Ruby
 
@@ -27,7 +28,7 @@ ERB and other templating engines allow us to modify the content and structure of
 
 The substitution tag evaluates Ruby code and then displays the results into the view. It opens with `<%=` and closes with `%>`. Inside of these tags, you can write any valid Ruby code that you want.
 
-There aren't any tests for this lesson, but feel free to reopen the `index.erb` file from the previous lesson and code along. You'll also want to restart your Shotgun server by entering `shotgun` from the lesson directory in terminal. In `index.erb`, add the following code, which should render in the browser as `I love Ruby!!`:
+There aren't any tests for this lesson, but feel free to create a Rails view file and code along. You can start your Rails server by entering `rails server` from the lesson directory in terminal. In your view file (e.g., `app/views/pages/index.html.erb`), add the following code, which should render in the browser as `I love Ruby!!`:
 
 ```erb
 <%= "I love " + "Ruby!!" %>
@@ -49,7 +50,7 @@ We can wrap the substitution tags in any other HTML tags that we like. The code 
 
 ### Scripting Tags
 
-Scripting tags open with `<%` and close with `%>`. They evaluate –– but do not actually display –– Ruby code. Add the following lines of code to `index.erb`:
+Scripting tags open with `<%` and close with `%>`. They evaluate –– but do not actually display –– Ruby code. Add the following lines of code to your Rails view file:
 
 ```erb
 <% if 1 == 2 %>
@@ -93,13 +94,15 @@ Would produce:
 </ul>
 ```
 
-Notice that we use the substitution tag to display the value of the inner `square` variable. Again, imagine you're at Facebook and you want to print out all of the wall posts on a given profile page. They could store the posts in an array called `wall_posts`. Add the following line of code to your `index.erb` file:
+Notice that we use the substitution tag to display the value of the inner `square` variable. Again, imagine you're at Facebook and you want to print out all of the wall posts on a given profile page. They could store the posts in an array called `wall_posts`. Add the following line of code to your Rails view file:
 
 ```erb
 <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
 ```
 
-Here, we're defining a variable called `wall_posts` and assigning its value to an array of strings. Now we can iterate through our `wall_posts` array and create a new `<li>` item for each one. 
+Here, we're defining a variable called `wall_posts` and assigning its value to an array of strings. Now we can iterate through our `wall_posts` array and create a new `<li>` item for each one.
+
+**Note:** In a typical Rails application, variables like `wall_posts` would be passed from the controller to the view as instance variables (e.g., `@wall_posts`), rather than being defined directly in the view.
 
 ```erb
 <ul>
@@ -109,7 +112,7 @@ Here, we're defining a variable called `wall_posts` and assigning its value to a
 </ul>
 ```
 
-This should display: 
+This should display:
 
 ```html
 <ul>
@@ -121,13 +124,8 @@ This should display:
 
 ## Video Review
 
-* [Video Review- Forms](https://www.youtube.com/watch?v=0TyCN_oJU3Y) 
+- [Video Review- Forms](https://www.youtube.com/watch?v=0TyCN_oJU3Y)
 
 ## Resources
+
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
-
-## Does this need an update?
-
-Please open a [GitHub issue](https://github.com/learn-co-curriculum/phrg-sinatra-using-erb/issues) or [pull-request](https://github.com/learn-co-curriculum/phrg-sinatra-using-erb/pulls). Provide a detailed description that explains the issue you have found or the change you are proposing. Then "@" mention your instructor on the issue or pull-request, and send them a link via Connect.
-
-<p data-visibility='hidden'>PHRG Sinatra Views: Using ERB</p>
