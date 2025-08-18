@@ -1,0 +1,45 @@
+<h1>Rails Views: Using ERB</h1>
+
+<p>Welcome to your ERB practice page! Use this view to experiment with the concepts from the lesson.</p>
+
+<!-- Example 1: Basic substitution tag -->
+<h2>Basic Substitution</h2>
+<p><%= "I love " + "Ruby!!" %></p>
+
+<!-- Example 2: Math in ERB -->
+<p>What is 1 + 1? <%= 1 + 1 %></p>
+
+<!-- Example 3: HTML wrapping -->
+<h3><%= "I love Ruby!!" %></h3>
+
+<!-- Example 4: Scripting tags with conditional logic -->
+<h2>Conditional Logic</h2>
+<% if 1 == 2 %>
+  <p>1 equals 2.</p>
+<% else %>
+  <p>1 does not equal 2.</p>
+<% end %>
+
+<!-- Example 5: Iteration -->
+<h2>Iteration Example</h2>
+<% squares = [1, 4, 9, 16] %>
+<ul>
+  <% squares.each do |square| %>
+    <li><%= square %></li>
+  <% end %>
+</ul>
+
+<!-- Example 6: Wall posts simulation -->
+<h2>Wall Posts Example</h2>
+<% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+<ul>
+  <% wall_posts.each do |post| %>
+    <li><%= post %></li>
+  <% end %>
+</ul>
+
+<!-- Practice Area: Add your own ERB code below -->
+<h2>Practice Area</h2>
+<p>Try adding your own ERB code here:</p>
+
+<!-- Your code goes here -->
